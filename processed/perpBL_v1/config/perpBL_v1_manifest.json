@@ -1,0 +1,38 @@
+{
+  "project_root": "/home/idies/workspace/Storage/elenceq/mhd_work/jhtdb_mhd1024",
+  "run_name": "perpBL_v1",
+  "definition": {
+    "increment_type": "centered",
+    "local_mean_field": "Gaussian-filtered magnetic field evaluated at increment midpoint",
+    "gaussian_sigma_rule": "sigma_B(r) = r/2",
+    "directions": "8 local directions in the plane perpendicular to B_L(x)",
+    "r_list": [32, 40, 48, 64, 80, 96, 128, 160, 192],
+    "nphi": 8,
+    "random_seed": 12345
+  },
+  "smoke": {
+    "n_sample": 50000,
+    "r_list": [32, 64, 128, 192]
+  },
+  "production": {
+    "n_sample": 200000,
+    "r_list": [32, 40, 48, 64, 80, 96, 128, 160, 192]
+  },
+  "cubes": {
+    "reference_448": {
+      "stem": "t0057_x289-736_y289-736_z289-736",
+      "kind": "reference_448",
+      "velocity": "raw/mhd1024_velocity_t0057_x289-736_y289-736_z289-736.npy",
+      "magnetic": "raw/mhd1024_magneticfield_t0057_x289-736_y289-736_z289-736.npy",
+      "pressure": "raw/mhd1024_pressure_t0057_x289-736_y289-736_z289-736.npy"
+    }
+  },
+  "outputs": {
+    "smoke": "processed/perpBL_v1/smoke",
+    "reference_448": "processed/perpBL_v1/448",
+    "per_cube": "processed/perpBL_v1/per_cube",
+    "ensemble": "processed/perpBL_v1/ensemble",
+    "figures": "processed/perpBL_v1/figures",
+    "logs": "processed/perpBL_v1/logs"
+  }
+}

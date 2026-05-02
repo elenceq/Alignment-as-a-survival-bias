@@ -1,0 +1,20 @@
+TABLE I: corrected local-BL-perpendicular values
+
+Mean folded angle, all points (inertial-range average)                       50.33 deg        [49.29, 51.23] deg
+Mean folded angle, top 10\% by $A_r$ (inertial-range average)                38.88 deg        [35.91, 41.63] deg
+Mean folded angle, top 10\% by $|j|$ (inertial-range average)                49.61 deg        [48.45, 50.60] deg
+Mean off-diagonal $R_c$ (real data)                                          0.210            [0.188, 0.232]
+Mean off-diagonal $R_s$ (real data)                                          0.096            [0.082, 0.112]
+Mean off-diagonal $R_c$ (full shuffle)                                       0.000            [-0.000, 0.000]
+Mean off-diagonal $R_s$ (full shuffle)                                       -0.000           [-0.000, 0.000]
+Mean off-diagonal $R_c$ ($A_r$-bin shuffle)                                  0.014            [0.006, 0.024]
+Mean off-diagonal $R_s$ ($A_r$-bin shuffle)                                  0.015            [0.010, 0.022]
+Mean off-diagonal $R_c$ ($|j|$-bin shuffle)                                  0.001            [0.001, 0.002]
+Mean off-diagonal $R_s$ ($|j|$-bin shuffle)                                  0.001            [0.000, 0.001]
+
+TABLE II: corrected local-BL-perpendicular values
+
+c_r   (64, 96)    Pearson=0.280  Spearman=0.281  CI_P=[0.250, 0.310]  CI_S=[0.253, 0.311]  pP=6.10352e-05  pS=6.10352e-05
+c_r   (48, 160)   Pearson=0.057  Spearman=0.058  CI_P=[0.033, 0.081]  CI_S=[0.034, 0.083]  pP=0.000732422  pS=0.000671387
+s_r   (64, 96)    Pearson=0.108  Spearman=0.101  CI_P=[0.085, 0.136]  CI_S=[0.078, 0.128]  pP=6.10352e-05  pS=6.10352e-05
+s_r   (48, 160)   Pearson=0.001  Spearman=0.002  CI_P=[-0.007, 0.010]  CI_S=[-0.006, 0.010]  pP=0.784119  pS=0.678467
