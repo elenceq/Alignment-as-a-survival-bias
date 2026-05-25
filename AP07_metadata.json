@@ -1,0 +1,45 @@
+{
+  "manifest": "/home/idies/workspace/Storage/elenceq/mhd_work/jhtdb_mhd1024/AmplitudeProject/00_admin/AP06_320_timewindow_manifest_20.csv",
+  "run_label": "AP07_320x20_localPerp_meanTheta_n30000",
+  "n_cubes": 20,
+  "r_list": [
+    32,
+    48,
+    64,
+    80,
+    96,
+    128,
+    160,
+    192
+  ],
+  "lags": [
+    1,
+    2,
+    4
+  ],
+  "fit_min": 32,
+  "fit_max": 160,
+  "primary_lag": 1,
+  "n_samples_per_cube_per_r_start": 30000,
+  "n_phi": 8,
+  "sector_mode": "mean_theta",
+  "local_perpendicular": true,
+  "BL_filter": "Gaussian coarse-grained magnetic field",
+  "BL_sigma_L": "L = bl_sigma_factor * r",
+  "bl_sigma_factor": 0.5,
+  "bl_downsample": 4,
+  "transition_geometry": "directions perpendicular to BL at start time; same midpoint-direction pairs evaluated at target time",
+  "primary_slopes": {
+    "+_direct": 0.22934320970093014,
+    "+_sd": 0.22960117340672206,
+    "-_direct": 0.23470580237952315,
+    "-_sd": 0.23513395658260366,
+    "+-_direct": 0.23010136552325947,
+    "+-_sd": 0.23050888047424473
+  },
+  "outputs": {
+    "outdir": "/home/idies/workspace/Storage/elenceq/mhd_work/jhtdb_mhd1024/AmplitudeProject/04_outputs/AP07_320_timewindow_source_depletion/AP07_320x20_localPerp_meanTheta_n30000",
+    "s2_pdf": "/home/idies/workspace/Storage/elenceq/mhd_work/jhtdb_mhd1024/AmplitudeProject/05_figures/AP07_320_timewindow_source_depletion/AP07_320x20_localPerp_meanTheta_n30000_S2_lag1.pdf",
+    "balance_pdf": "/home/idies/workspace/Storage/elenceq/mhd_work/jhtdb_mhd1024/AmplitudeProject/05_figures/AP07_320_timewindow_source_depletion/AP07_320x20_localPerp_meanTheta_n30000_balance_lag1.pdf"
+  }
+}
